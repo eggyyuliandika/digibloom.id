@@ -73,9 +73,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "DigiBloom — Digital Agency Bali untuk UMKM & Bisnis Berkembang" },
-      { name: "description", content: "DigiBloom membantu UMKM & bisnis di Bali tumbuh lewat Social Media, Iklan, Konten Kreatif, Live Streaming, dan Website Development." },
+      {
+        name: "description",
+        content:
+          "DigiBloom membantu UMKM & bisnis di Bali tumbuh lewat Social Media, Iklan, Konten Kreatif, E-commerce Live Streaming Service, dan Website Development.",
+      },
       { property: "og:title", content: "DigiBloom — Digital Agency Bali" },
-      { property: "og:description", content: "Partner digital terjangkau & profesional untuk bisnis berkembang." },
+      {
+        property: "og:description",
+        content: "Partner digital terjangkau & profesional untuk bisnis berkembang.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -83,7 +90,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,

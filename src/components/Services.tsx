@@ -1,11 +1,31 @@
 import { Megaphone, Sparkles, Video, Globe, Share2 } from "lucide-react";
 
 const services = [
-  { icon: Share2, title: "Social Media Management", desc: "Strategi konten, posting konsisten, dan engagement growth untuk brand Anda." },
-  { icon: Megaphone, title: "Advertising", desc: "Kampanye iklan Meta & Google yang fokus pada konversi dan ROI nyata." },
-  { icon: Sparkles, title: "Creative Production", desc: "Foto, video, dan desain yang menonjol dan sesuai identitas brand." },
-  { icon: Video, title: "Live Streaming Service", desc: "Live commerce & event streaming profesional untuk audiens lebih luas." },
-  { icon: Globe, title: "Website Development", desc: "Website modern, cepat, dan SEO-friendly untuk meningkatkan kredibilitas." },
+  {
+    icon: Share2,
+    title: "Social Media Management",
+    desc: "Strategi konten, posting konsisten, dan engagement growth untuk brand Anda.",
+  },
+  {
+    icon: Megaphone,
+    title: "Advertising",
+    desc: "Kampanye iklan Meta & Google yang fokus pada konversi dan ROI nyata.",
+  },
+  {
+    icon: Sparkles,
+    title: "Creative Production",
+    desc: "Foto, video, dan desain yang menonjol dan sesuai identitas brand.",
+  },
+  {
+    icon: Video,
+    title: "E-commerce Live Streaming Service",
+    desc: "Live e-commerce profesional untuk audiens lebih luas.",
+  },
+  {
+    icon: Globe,
+    title: "Website Development",
+    desc: "Website modern, cepat, dan SEO-friendly untuk meningkatkan kredibilitas.",
+  },
 ];
 
 export function Services() {

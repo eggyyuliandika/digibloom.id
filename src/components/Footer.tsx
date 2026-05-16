@@ -54,7 +54,7 @@ export function Footer() {
             <li>Social Media Management</li>
             <li>Advertising</li>
             <li>Creative Production</li>
-            <li>Live Streaming</li>
+            <li>E-commerce Live Streaming Service</li>
             <li>Website Development</li>
           </ul>
         </div>

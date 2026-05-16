@@ -8,7 +8,7 @@ import { WA_URL } from "@/lib/site";
 const items = [
   { img: ads, title: "Advertising" },
   { img: crevprod, title: "Creative Production" },
-  { img: lss, title: "Live Streaming Service" },
+  { img: lss, title: "E-commerce Live Streaming Service" },
   { img: webdev, title: "Website Development" },
   { img: smm, title: "Social Media Management" },
 ];
