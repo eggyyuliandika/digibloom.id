@@ -1,14 +1,16 @@
-import balimoon from "@/assets/portofolio-balimoon.png";
-import nwtc from "@/assets/portofolio-nwtc.png";
-import tpfx from "@/assets/portofolio-tpfx.png";
-import kalimutu from "@/assets/portofolio-kalimutu.png";
+import ads from "@/assets/ads.jpg";
+import crevprod from "@/assets/crevprod.jpg";
+import lss from "@/assets/lss.jpg";
+import webdev from "@/assets/webdev.jpg";
+import smm from "@/assets/smm.jpg";
 import { WA_URL } from "@/lib/site";
 
 const items = [
-  { img: balimoon, title: "Balimoon", tag: "Website Development" },
-  { img: nwtc, title: "NWTC", tag: "Social Media Management" },
-  { img: tpfx, title: "TPFX Bali", tag: "Social Media Management" },
-  { img: kalimutu, title: "Kalimutu Fitness", tag: "Advertising" },
+  { img: ads, title: "Advertising" },
+  { img: crevprod, title: "Creative Production" },
+  { img: lss, title: "Live Streaming Service" },
+  { img: webdev, title: "Website Development" },
+  { img: smm, title: "Social Media Management" },
 ];
 
 export function Hero() {
@@ -25,8 +27,8 @@ export function Hero() {
             Digital Agency • Bali, Indonesia
           </span>
           <h1 className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.05]">
-            Grow Your Business <br />
-            Digitally with <span className="text-gradient">DigiBloom</span>
+            Lets Bloom Your Digital Presence <br />
+            with <span className="text-gradient">DigiBloom</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
             Kami membantu bisnis berkembang melalui strategi digital yang efektif, konten kreatif,
@@ -64,7 +66,55 @@ export function Hero() {
         </div>
 
         <div className="relative animate-fade-up" style={{ animationDelay: "150ms" }}>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-3 gap-3 mb-3">
+            {items.slice(0, 3).map((it, i) => (
+              <div
+                key={it.title}
+                className="group relative rounded-2xl overflow-hidden bg-gradient-card border border-border shadow-elegant"
+              >
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img
+                    src={it.img}
+                    alt={`${it.title}`}
+                    width={1000}
+                    height={800}
+                    loading={i === 0 ? "eager" : "lazy"}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 to-transparent">
+                  <span className="text-xs font-semibold text-[#1e4263] bg-white px-2 py-1 rounded-sm inline-block">
+                    {it.title}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            {items.slice(3).map((it) => (
+              <div
+                key={it.title}
+                className="group relative rounded-2xl overflow-hidden bg-gradient-card border border-border shadow-elegant"
+              >
+                <div className="aspect-[16/9] overflow-hidden">
+                  <img
+                    src={it.img}
+                    alt={`${it.title}`}
+                    width={1000}
+                    height={800}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/70 to-transparent">
+                  <span className="text-xs font-semibold text-[#1e4263] bg-white px-2 py-1 rounded-sm inline-block">
+                    {it.title}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* <div className="grid grid-cols-2 gap-4">
             {items.map((it, i) => (
               <div
                 key={it.title}
@@ -76,8 +126,8 @@ export function Hero() {
                   <img
                     src={it.img}
                     alt={`${it.title} — ${it.tag}`}
-                    width={800}
-                    height={1000}
+                    width={1000}
+                    height={800}
                     loading={i === 0 ? "eager" : "lazy"}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -88,7 +138,7 @@ export function Hero() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
           <div className="absolute -bottom-6 -right-6 w-28 h-28 rounded-full bg-gradient-hero opacity-30 blur-2xl -z-10 animate-float" />
         </div>
       </div>

@@ -6,15 +6,15 @@ import kalimutu from "@/assets/portofolio-kalimutu.png";
 const items = [
   {
     img: balimoon,
-    title: "Balimoon",
+    title: "Balimoon Art & Space",
     tag: "Website Development",
     desc: "Website modern untuk meningkatkan trust dan penjualan online.",
   },
   {
     img: nwtc,
     title: "NWTC",
-    tag: "Social Media Management",
-    desc: "Social media management untuk branding profesional.",
+    tag: "Advertising",
+    desc: "Advertising campaign untuk new student member.",
   },
   {
     img: tpfx,
@@ -39,7 +39,7 @@ export function Portfolio() {
             Portofolio
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold">
-            Proyek yang Kami <span className="text-gradient">Kerjakan</span>
+            Client <span className="text-gradient">Kami</span>
           </h2>
         </div>
 
@@ -56,7 +56,7 @@ export function Portfolio() {
                   width={800}
                   height={500}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="p-6">

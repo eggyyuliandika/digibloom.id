@@ -19,7 +19,7 @@ function Index() {
     <main>
       <Navbar />
       <Hero />
-      <TrustedBy />
+      {/* <TrustedBy /> */}
       <About />
       <Services />
       <WhyUs />
